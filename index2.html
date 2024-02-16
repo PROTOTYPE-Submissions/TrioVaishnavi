@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learning Platform</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="app">
+        <h1>Welcome to the Learning Platform</h1>
+        <div id="userSelection">
+            <button onclick="showStudentForm()">Student</button>
+            <button onclick="showTeacherForm()">Teacher</button>
+        </div>
+        <div id="studentForm" style="display:none;">
+            <!-- Student registration/login form goes here -->
+        </div>
+        <div id="teacherForm" style="display:none;">
+            <form id="courseForm" style="display:none;" onsubmit="submitCourse(event)">
+                <h2>Upload Course</h2>
+                <label for="courseTitle">Course Title:</label>
+                <input type="text" id="courseTitle" required>
+                <label for="courseDescription">Course Description:</label>
+                <textarea id="courseDescription" required></textarea>
+                <button type="submit">Upload Course</button>
+            </form>
+
+            <form id="quizForm" style="display:none;" onsubmit="submitQuiz(event)">
+                <h2>Upload Quiz</h2>
+                <label for="quizTitle">Quiz Title:</label>
+                <input type="text" id="quizTitle" required>
+                <label for="quizQuestions">Quiz Questions (comma-separated):</label>
+                <input type="text" id="quizQuestions" required>
+                <button type="submit">Upload Quiz</button>
+            </form>
+        </div>
+    </div>
+    <script src="script2.js"></script>
+</body>
+</html>

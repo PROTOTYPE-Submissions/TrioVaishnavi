@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+#app {
+    margin-top: 50px;
+}
+
+#content {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.section {
+    margin-bottom: 20px;
+    padding: 15px;
+    /* background-color: #4caf50; */
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.section:hover {
+    transition: 1s;
+    
+    background-color: #aee6b0;
+    cursor: pointer;
+}
+
+.section h2 {
+    margin-bottom: 10px;
+}
+
+#progress {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+h1{
+    padding: 40px;
+    background-color: #4caf50;
+}
+
+h3{
+    font-size: 40px;
+}
